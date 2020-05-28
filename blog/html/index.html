@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<!--한글 작성으로 변경-->
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--타이틀 설정-->
+
     <title>보고하슈</title>
-    <style>
-        /*현재 브라우저 화면 크기를 줄일 시 위치가 깨지는 버그 발생*/
-        /*링크 밑줄 없앰(앞 뒤 순서에 따라 작동여부 달라짐)*/
+
+    <style type="text/css">
+        .container {
+			max-width: 1000px;
+			min-height: 500px;
+			margin: auto;
+		}
+
         a, a:visited{
             text-decoration: none;
             color:black;
         }
-        /*네비게이션 스타일 배경색 지정*/
-        nav{
-            height: 100px;
+
+        .nav{
+            list-style: none; 
+			background-color: gray; 
+			width: 300px;
+            height: 60px;
+			text-align: center;
+			vertical-align: center;
         }
-        /*목록 만들어 블록 설정 후 정렬*/
-        .navTitle{
-            width: 100px; height: 100px;
-        }
-        /*목록 마우스 오버 작동 및 컬러 설정*/
-        .navTitle:hover{
+
+        .navLink:hover{
             background-color: darkturquoise;
         };
-        div div nav ul li{
-            list-style:none;
-        }
     </style>
 </head>
+
 <body>
     <header>
         <div>
             <div>
                 <a href="https://tomyravn.github.io/Hassue/blog/html/index.html"><img id="home" src="../img/HomeLogo.png" alt="하슈 홈페이지 로고" width="400" height="60"></a>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li class="navTitle">LEE GANG MIN</li>
-                        <li class="navTitle">GONG GA YEONG</li>
-                        <li class="navTitle">LEE SO HEE</li>
-                        <li class="navTitle">JEONG YEON SEO</li>
-                    </ul>
-                </nav>
-            </div>
+            <nav style="height: 60px; max-width: 2000px; background-color:gray;">
+                <ul style="padding-left: 300px;">
+                    <li class="nav"><a href="daegu.html" class="navLink">LEE GANG MIN</a></li>
+                    <li class="nav"><a href="blog01.html" class="navLink">GONG GA YEONG</a></li>
+                    <li class="nav"><a href="0528이소희.html" class="navLink">LEE SO HEE</a></li>
+                    <li class="nav"><a href="0528정연서.html" class="navLink">JEONG YEON SEO</a></li>
+                </ul>
+            </nav>
         </div>
     </header><hr>
-    
-   
+
+    <section class="container" style="border: 1px solid;">
+    </section>
 </body>
 </html>
