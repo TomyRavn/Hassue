@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <title>보고하슈</title>
+
+    <style type="text/css">
+
+        .container {
+			max-width: 2000px;
+			min-height: 500px;
+			margin: auto;
+		}
+
+        a, a:visited{
+            text-decoration: none;
+            color:black;
+        }
+
+        .navLine{
+            float: right;
+        }
+
+        .nav{
+            float:left; 
+            list-style: none;
+			width: 200px;
+            height: 60px;
+			text-align: center;
+			vertical-align: center;
+        }
+
+        .nav:hover{
+            background-color: darkturquoise;
+        }
+
+        
         body{
             background-color:#FFEBF0;
         }
@@ -19,6 +50,24 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="titleBlock">
+
+            <a href="https://tomyravn.github.io/Hassue/blog/html/index.html"><img src="../img/HomeLogo.png" alt="하슈 홈페이지 로고" width="400" height="60"></a>
+            
+            <nav class="navLine" style="display: inline-block; max-width: 1000px;" > 
+                <!--style="height: 60px; max-width: 2000px; background-color:gray;">-->
+                <ul> <!--style="padding-left: 300px;">-->
+                    <li class="nav"><a href="daegu.html" class="navLink">LEE GANG MIN</a></li>
+                    <li class="nav"><a href="홈페이지.html" class="navLink">GONG GA YEONG</a></li>
+                    <li class="nav"><a href="0528이소희.html" class="navLink">LEE SO HEE</a></li>
+                    <li class="nav"><a href="0528정연서.html" class="navLink">JEONG YEON SEO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header><hr>
+
     
     <h3 class="shadow1">대전폴리텍대학 스마트소프트웨어 하이테크과정</h3>
     <p align="right">2020-05-07 작성</p>
