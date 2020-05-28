@@ -7,8 +7,9 @@
     <title>보고하슈</title>
 
     <style type="text/css">
+
         .container {
-			max-width: 1000px;
+			max-width: 2000px;
 			min-height: 500px;
 			margin: auto;
 		}
@@ -18,39 +19,55 @@
             color:black;
         }
 
+        .navLine{
+            float: right;
+        }
+
         .nav{
-            list-style: none; 
-			background-color: gray; 
-			width: 300px;
+            float:left; 
+            list-style: none;
+			width: 200px;
             height: 60px;
 			text-align: center;
 			vertical-align: center;
         }
 
-        .navLink:hover{
+        .nav:hover{
             background-color: darkturquoise;
-        };
+        }
+
+        .bgImage{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1902px;
+            height: 500px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div>
-            <div>
-                <a href="https://tomyravn.github.io/Hassue/blog/html/index.html"><img id="home" src="../img/HomeLogo.png" alt="하슈 홈페이지 로고" width="400" height="60"></a>
-            </div>
-            <nav style="height: 60px; max-width: 2000px; background-color:gray;">
-                <ul style="padding-left: 300px;">
+        <div class="titleBlock">
+
+            <a href="https://tomyravn.github.io/Hassue/blog/html/index.html"><img src="../img/HomeLogo.png" alt="하슈 홈페이지 로고" width="400" height="60"></a>
+            
+            <nav class="navLine" style="display: inline-block; max-width: 1000px;" > 
+                <!--style="height: 60px; max-width: 2000px; background-color:gray;">-->
+                <ul> <!--style="padding-left: 300px;">-->
                     <li class="nav"><a href="daegu.html" class="navLink">LEE GANG MIN</a></li>
                     <li class="nav"><a href="blog01.html" class="navLink">GONG GA YEONG</a></li>
                     <li class="nav"><a href="0528이소희.html" class="navLink">LEE SO HEE</a></li>
                     <li class="nav"><a href="0528정연서.html" class="navLink">JEONG YEON SEO</a></li>
                 </ul>
             </nav>
+
         </div>
     </header><hr>
 
     <section class="container" style="border: 1px solid;">
+        <img class="bgImage" src="../img/mainBackGround.jpg">
     </section>
 </body>
 </html>
