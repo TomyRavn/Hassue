@@ -61,6 +61,7 @@
 				<form role="writeform" method="post" action="/board/write">
 					<table style="table-layout:fixed;" class="table table-hover" >
 						<tbody>
+						<c:if test="${member.userId != null}">
 							<tr>
 								<td>
 									<label for="title">제목 </label><br><input type="text" id="title" name="title" class="chk" title="제목을 입력하세요." style="width:600px; height:30px;"/>
@@ -79,7 +80,13 @@
 								<td>						
 									<button type="submit" class="update_btn btn btn-warning">작성</button>
 								</td>
-							</tr>			
+							</tr>
+							
+							</c:if>
+							<c:if test="${member.userId == null}">
+								<p>로그인 후에 작성하실 수 있습니다.</p>
+							</c:if>
+										
 						</tbody>			
 					</table>
 				</form>
