@@ -29,6 +29,11 @@ background-image: url("https://media.istockphoto.com/vectors/students-on-books-s
 background-repeat: no-repeat;
 background-position:center;
 }
+
+#A{
+	position: absolute;
+	padding : 50px
+}
 </style>
 </head>
 <body>
@@ -89,7 +94,7 @@ background-position:center;
 							 });   
 						</script>
 					</div>
-					<div class="col-md-offset-3">
+					<div class="col-md-offset-3" id="A">
 						<ul class="pagination">
 							<c:if test="${pageMaker.prev}">
 								<li><a href="list${pageMaker.makeSearch(pageMaker.startPage - 1)}">이전</a></li>

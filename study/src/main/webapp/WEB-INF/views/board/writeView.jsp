@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 	<head>
 <!-- 합쳐지고 최소화된 최신 CSS -->
@@ -11,9 +12,13 @@
 
 <style type="text/css">
 	body{
-		padding: 15px;
+	
+		position: absolute;
+		padding: 10px;
 		margin: 30px;	
-		color: gray;	
+		color: gray;
+		
+			
 	}
 </style>
 
@@ -74,7 +79,7 @@
 							</tr>
 							<tr>
 								<td>
-									<label for="writer">작성자</label><br><input type="text" id="writer" name="writer" class="chk" title="작성자를 입력하세요." />
+									<label for="writer">작성자</label><br><input type="text" id="writer" name="writer" class="chk" title="작성자를 입력하세요." value="${member.userId}"/>
 								</td>
 							<tr>
 								<td>						

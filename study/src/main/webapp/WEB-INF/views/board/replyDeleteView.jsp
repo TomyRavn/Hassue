@@ -15,6 +15,19 @@
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta charset="UTF-8">
 <title>게시판</title>
+
+<style type="text/css">
+	body{
+	
+		position: absolute;
+		padding: 10px;
+		margin: 30px;	
+		color: gray;
+		
+			
+	}
+</style>
+
 </head>
 <script type="text/javascript">
 	$(document)
@@ -62,8 +75,8 @@
 
 				<div>
 					<p>삭제 하시겠습니까?</p>
-					<button type="submit" class="delete_btn">예 삭제합니다.</button>
-					<button type="button" class="cancel_btn">아니오. 삭제하지 않습니다.</button>
+					<button type="submit" class="update_btn btn btn-warning">예.</button>
+					<button type="button" class="delete_btn btn btn-danger">아니오.</button>
 				</div>
 			</form>
 		</section>

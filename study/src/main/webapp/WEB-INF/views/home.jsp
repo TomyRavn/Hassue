@@ -58,7 +58,7 @@ padding-top: 15px;
 	<div id="login_wrapper">
 		<c:if test="${member == null}">
 			<div>
-				<label for="userId">아이디 </label>
+				<label for="userId">아이디　</label>
 				<input type="text" id="userId" name="userId">				
 			</div>
 			<div>
@@ -82,6 +82,7 @@ padding-top: 15px;
 		<c:if test="${msg == false}">
 			<p style="color: red;">로그인 실패! 아이디와 비밀번호 확인해주세요.</p>
 		</c:if>
+		
 	</form>
 </body>
 </html>
