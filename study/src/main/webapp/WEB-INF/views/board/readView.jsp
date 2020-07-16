@@ -5,7 +5,17 @@
 <html>
 <head>
 
- 
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <!-- 부가적인 테마 -->
@@ -86,16 +96,16 @@
                
 </script>
 
-<body>
+<body>               
 		<div class="container">
 			<header>
-				<h1> 게시판</h1>
+				<h1>Read</h1>
 			</header>
 			<hr />
 			 
-			<div>
-				<%@include file="nav.jsp" %>
-			</div>
+<!-- 			<div> -->
+<%-- 				<%@include file="nav.jsp" %> --%>
+<!-- 			</div> -->
 			
 			<section id="container">
 				<form name="readForm" role="form" method="post">

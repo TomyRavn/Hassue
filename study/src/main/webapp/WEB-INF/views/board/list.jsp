@@ -23,7 +23,6 @@
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>공부하슈!</title>
 <style type="text/css">
-
 h1{
 	color: gray;
 }
@@ -37,7 +36,6 @@ background-image: url("https://media.istockphoto.com/vectors/students-on-books-s
 background-repeat: no-repeat;
 background-position:center;
 }
-
 #A{
 	position: absolute;
 	padding : 50px

@@ -7,19 +7,6 @@
 <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
-  <link href="/resources/css/styles.css" rel="stylesheet" />
-  
-  <!-- Header -->
-<header class="masthead">
-  <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">공부하슈!</div>
-      <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-    </div>
-  </div>
-</header>
 
 	<title>Home</title>
 		<!-- 합쳐지고 최소화된 최신 CSS -->
@@ -50,11 +37,24 @@ padding-right: 20px;
 padding-top: 15px;
 }
 
+div#A{
+position: absolute;
+top: 40%;
+left: 65%;
+margin-left: -150px;
+margin-top: -100px;
+text-align: center;
+padding-right: 20px;
+padding-top: 15px;
+}
+
 
 </style> 
 </head>
 
+<div id="A">
 <a href="/board/list">게시판</a><br />
+</div>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#logoutBtn").on("click", function(){

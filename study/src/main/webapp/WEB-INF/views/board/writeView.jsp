@@ -5,6 +5,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -14,15 +26,8 @@
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta charset="UTF-8">
-<title>게시글 수정하기</title>
+<title>게시글 작성하기</title>
 
-<style type="text/css">
-	body{
-		padding: 15px;
-		margin: 30px;	
-		color: gray;	
-	}
-</style>
 
 </head>
 <script type="text/javascript">
@@ -73,12 +78,12 @@
 
 	<div class="container">
 		<header>
-			<h1>게시글 작성하기</h1>
+			<h1>Write</h1>
 		</header>
 
-		<div>
-			<%@include file="nav.jsp"%>
-		</div>
+<!-- 		<div> -->
+<%-- 			<%@include file="nav.jsp"%> --%>
+<!-- 		</div> -->
 
 
 		<section id="container">
@@ -97,7 +102,7 @@
 						<tr>
 							<td><label for="content">내용</label><br>
 							<textarea id="content" name="content" class="chk"
-									title="내용을 입력하세요." cols="20" row="40" style="width:950px; height:400px;"><c:out value="${update.content}" /></textarea>
+									title="내용을 입력하세요." cols="20" row="40" style="width:1130px; height:400px;"><c:out value="${update.content}" /></textarea>
 							</td>
 						</tr>
 						<tr>
@@ -114,7 +119,7 @@
 				</table>
 				<div>
 					<button type="submit" class="update_btn btn btn-warning">저장</button>
-					<button type="submit" class="delete_btn btn btn-danger">취소</button>
+					<button type="submit" class="delete_btn btn btn-danger">목록</button>
 				</div>
 			</form>
 		</section>
