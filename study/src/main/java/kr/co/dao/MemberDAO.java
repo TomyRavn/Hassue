@@ -21,6 +21,5 @@ public interface MemberDAO {
 	
 	// 아이디 중복체크
 	public int idChk(MemberVO vo) throws Exception;
-	
 		
 }

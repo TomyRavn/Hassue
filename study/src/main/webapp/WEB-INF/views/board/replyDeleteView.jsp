@@ -5,6 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Bootstrap CSS -->
+  <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
+  <link href="/resources/css/styles.css" rel="stylesheet" />
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">

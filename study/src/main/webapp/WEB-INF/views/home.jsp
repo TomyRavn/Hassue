@@ -4,6 +4,23 @@
 
 <html>
 <head>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
+  <link href="/resources/css/styles.css" rel="stylesheet" />
+  
+  <!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">공부하슈!</div>
+      <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+    </div>
+  </div>
+</header>
+
 	<title>Home</title>
 		<!-- 합쳐지고 최소화된 최신 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">

@@ -16,20 +16,11 @@
 <meta charset="UTF-8">
 <title>게시글 수정하기</title>
 
-<style type="text/css">
-	body{
-		padding: 15px;
-		margin: 30px;	
-		color: gray;	
-	}
-</style>
-
 </head>
 <script type="text/javascript">
 	$(document).ready(
 			function() {
 				var formObj = $("form[name='updateForm']");
-
 				$(".cancel_btn").on(
 						"click",
 						function() {
@@ -40,7 +31,6 @@
 									+ "&searchType=${scri.searchType}"
 									+ "&keyword=${scri.keyword}";
 						})
-
 				$(".update_btn").on("click", function() {
 					if (fn_valiChk()) {
 						return false;
@@ -50,7 +40,6 @@
 					formObj.submit();
 				})
 			})
-
 	function fn_valiChk() {
 		var updateForm = $("form[name='updateForm'] .chk").length;
 		for (var i = 0; i < updateForm; i++) {
@@ -65,7 +54,6 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-
 		$(".cancel_btn").on("click", function() {
 			event.preventDefault();
 			location.href = "/board/list";
@@ -75,7 +63,7 @@
 
 <body>
 
-	<div id="container">
+	<div class="container">
 		<header>
 			<h1>게시글 수정하기</h1>
 		</header>
@@ -84,7 +72,6 @@
 		<div>
 			<%@include file="nav.jsp"%>
 		</div>
-		<hr />
 
 		<section id="container">
 			<form name="updateForm" role="form" method="post"
@@ -92,31 +79,24 @@
 				<input type="hidden" name="bno" value="${update.bno}"
 					readonly="readonly" />
 
-				<table style="table-layout:fixed;" class="table table-hover" >
-					<tbody>
-						<tr>
-							<td><label for="title">제목</label>
-								<input type="text" id="title" name="title"
-								value="${update.title}" class="chk" title="제목을 입력해 주세요." /></td>
-						</tr>
-						<tr>
-							<td><label for="content">내용</label><br>
-							<textarea id="content" name="content" class="chk"
-									title="내용을 입력하세요." cols="20" row="40" style="width:600px; height:400px;"><c:out value="${update.content}" /></textarea>
-							</td>
-						</tr>
-						<tr>
-							<td><label for="writer">작성자</label><input
-								type="text" id="writer" name="writer" value="${update.writer}"
-								readonly="readonly" /></td>
-						</tr>
-						<tr>
-							<td><label for="regdate">작성날짜</label>
-								<fmt:formatDate value="${update.regdate}" pattern="yyyy-MM-dd" />
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<table style="table-layout:fixed;" class="table table-hover" >
+				<div class="form-group">
+					<label for="title" class="col-sm-2 control-label">제목</label>
+					<input type="text" id="title" name="title" class="form-control" value="${update.title}"/>
+					</div>
+					<div class="form-group">
+					<label for="content" class="col-sm-2 control-label">내용</label>
+					<textarea id="content" name="content" class="form-control" cols="10" rows="20"><c:out value="${update.content}" /></textarea>
+					</div>
+					<div class="form-group">
+					<label for="writer" class="col-sm-2 control-label">작성자</label>
+					<input type="text" id="writer" name="writer" class="form-control" value="${update.writer}"  readonly="readonly"/>
+					</div>
+					<div class="form-group">
+					<label for="regdate" class="col-sm-2 control-label">작성날짜</label>
+					<fmt:formatDate value="${update.regdate}" pattern="yyyy-MM-dd" />	
+					</div>
+			</table>
 				<div>
 					<button type="submit" class="update_btn btn btn-warning">저장</button>
 					<button type="submit" class="delete_btn btn btn-danger">취소</button>

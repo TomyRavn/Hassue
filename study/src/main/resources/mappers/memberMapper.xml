@@ -50,4 +50,6 @@
 		SELECT COUNT(*) FROM MP_MEMBER
 		WHERE USERID = #{userId}
 	</select>
+
+	
 </mapper>

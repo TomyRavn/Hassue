@@ -6,6 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import kr.co.vo.MemberVO;
+import oracle.net.aso.s;
 
 @Repository
 public class MemberDAOImpl implements MemberDAO {
@@ -52,4 +53,6 @@ public class MemberDAOImpl implements MemberDAO {
 			int result = sql.selectOne("memberMapper.idChk", vo);
 			return result;
 		}
+
+		
 }
