@@ -83,8 +83,9 @@
 				<label for="writer" class="col-sm-2 control-label">작성자</label>
 				<input type="text" id="writer" name="writer" class="form-control" value="${member.userId}" />
 				</div>													
-				<div class="form-group" id="a">						
+				<divid="a">						
 				<button type="submit" class="update_btn btn btn-warning">저장</button>
+				<button type="button" class="list_btn btn btn-primary" onclick="location.href='list'">목록</button>	
 				</div>
 									
 			</c:if>
