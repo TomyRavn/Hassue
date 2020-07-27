@@ -5,18 +5,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        
-        <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="" />
+<meta name="author" content="" />
 
+<title>Hassue</title>
+
+<!-- Bootstrap CSS -->
+<link href="<c:url value="/resources/css/bootstrap.css" />
+	rel="stylesheet">
+<link href="/resources/css/styles.css" rel="stylesheet" />
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -25,9 +27,21 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<meta charset="UTF-8">
-<title>Upset</title>
-
+<!-- ?? -->
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+	crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" /> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" /> -->
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap"
+	rel="stylesheet">
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+<title>글 읽기</title>
 </head>
 <script type="text/javascript">
 	$(document).ready(
@@ -62,8 +76,6 @@
 		}
 	}
 </script>
-
-
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#cancel_btn").on("click", function() {
@@ -72,25 +84,21 @@
 		})
 	})
 </script>
-
-<body>
-
+<body id="page-top">
+	<%@include file="nav.jsp"%>
 	<div class="container">
 		<header>
 			<h1>Modify</h1>
 		</header>
 		<hr />
-
 <!-- 		<div> -->
 <%-- 			<%@include file="nav.jsp"%> --%>
 <!-- 		</div> -->
-
 		<section id="container">
 			<form name="updateForm" role="form" method="post"
 				action="/board/update">
 				<input type="hidden" name="bno" value="${update.bno}"
 					readonly="readonly" />
-
 			<table style="table-layout:fixed;" class="table table-hover" >
 				<div class="form-group">
 					<label for="title" class="col-sm-2 control-label">제목</label>
@@ -118,4 +126,4 @@
 		<hr />
 	</div>
 </body>
-</html>
+</html> 
