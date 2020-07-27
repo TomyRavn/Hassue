@@ -94,13 +94,8 @@
 				<table>
 					<tbody>
 						<tr>
-							
-							<td>
-							<label for="content" >작성자&emsp;</label>
-							<input type="text" id="content" name="content" class="form-control"value="${replyUpdate.writer}" readonly ></label>
-							</br>
-							</br>
-							<label for="content" >댓글 내용&emsp;</label>
+		
+							<label for="content" >댓글 내용</label>
 							<input type="text" id="content" name="content" class="form-control" style="width:800px; height:100px;"
 								value="${replyUpdate.content}" /></td>
 						</tr>
